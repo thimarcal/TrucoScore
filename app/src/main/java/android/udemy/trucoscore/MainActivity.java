@@ -8,20 +8,20 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button left1Btn;
-    private Button left3Btn;
-    private Button left6Btn;
-    private Button left9Btn;
+    private Button mLeft1Btn;
+    private Button mLeft3Btn;
+    private Button mLeft6Btn;
+    private Button mLeft9Btn;
 
-    private Button right1Btn;
-    private Button right3Btn;
-    private Button right6Btn;
-    private Button right9Btn;
+    private Button mRight1Btn;
+    private Button mRight3Btn;
+    private Button mRight6Btn;
+    private Button mRight9Btn;
 
-    private Button resetBtn;
+    private Button mResetBtn;
 
-    private TextView scoreUsTv;
-    private TextView scoreThemTv;
+    private TextView mScoreUsTv;
+    private TextView mScoreThemTv;
 
     private int scoreUs;
     private int scoreThem;
@@ -31,29 +31,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        left1Btn = findViewById(R.id.left_1_button);
-        left1Btn.setOnClickListener(this);
-        left3Btn = findViewById(R.id.left_3_button);
-        left3Btn.setOnClickListener(this);
-        left6Btn = findViewById(R.id.left_6_button);
-        left6Btn.setOnClickListener(this);
-        left9Btn = findViewById(R.id.left_9_button);
-        left9Btn.setOnClickListener(this);
+        mLeft1Btn = findViewById(R.id.left_1_button);
+        mLeft1Btn.setOnClickListener(this);
+        mLeft3Btn = findViewById(R.id.left_3_button);
+        mLeft3Btn.setOnClickListener(this);
+        mLeft6Btn = findViewById(R.id.left_6_button);
+        mLeft6Btn.setOnClickListener(this);
+        mLeft9Btn = findViewById(R.id.left_9_button);
+        mLeft9Btn.setOnClickListener(this);
 
-        right1Btn = findViewById(R.id.right_1_button);
-        right1Btn.setOnClickListener(this);
-        right3Btn = findViewById(R.id.right_3_button);
-        right3Btn.setOnClickListener(this);
-        right6Btn = findViewById(R.id.right_6_button);
-        right6Btn.setOnClickListener(this);
-        right9Btn = findViewById(R.id.right_9_button);
-        right9Btn.setOnClickListener(this);
+        mRight1Btn = findViewById(R.id.right_1_button);
+        mRight1Btn.setOnClickListener(this);
+        mRight3Btn = findViewById(R.id.right_3_button);
+        mRight3Btn.setOnClickListener(this);
+        mRight6Btn = findViewById(R.id.right_6_button);
+        mRight6Btn.setOnClickListener(this);
+        mRight9Btn = findViewById(R.id.right_9_button);
+        mRight9Btn.setOnClickListener(this);
 
-        resetBtn = findViewById(R.id.reset_button);
-        resetBtn.setOnClickListener(this);
+        mResetBtn = findViewById(R.id.reset_button);
+        mResetBtn.setOnClickListener(this);
 
-        scoreUsTv = findViewById(R.id.score_us_tv);
-        scoreThemTv = findViewById(R.id.score_them_tv);
+        mScoreUsTv = findViewById(R.id.score_us_tv);
+        mScoreThemTv = findViewById(R.id.score_them_tv);
 
         scoreUs = 0;
         scoreThem = 0;
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 scoreThem += 3;
                 break;
             case R.id.right_6_button:
-                scoreThem += 7;
+                scoreThem += 6;
                 break;
             case R.id.right_9_button:
                 scoreThem += 9;
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
 
-        scoreUsTv.setText(""+scoreUs);
-        scoreThemTv.setText(""+scoreThem);
+        mScoreUsTv.setText(""+scoreUs);
+        mScoreThemTv.setText(""+scoreThem);
     }
 }

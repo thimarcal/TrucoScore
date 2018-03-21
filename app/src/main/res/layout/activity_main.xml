@@ -27,7 +27,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/score_us"
         android:textAlignment="center"
-        android:textSize="25dp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toStartOf="@+id/view"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -38,7 +38,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/score_them"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textAlignment="center"
         app:layout_constraintStart_toEndOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
